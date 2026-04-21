@@ -337,16 +337,3 @@ rmdir /s test-results # Windows
 
 ---
 
-## 📄 License
-
-ISC
-
----
-
-## 👤 Author
-
-Your Name/Organization
-
----
-
-**Happy Testing! 🎭**
