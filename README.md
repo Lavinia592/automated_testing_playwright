@@ -9,6 +9,7 @@ A comprehensive end-to-end testing automation framework built with **Playwright*
 This project automates testing of a banking web application (Zero Bank Security) and includes:
 
 - **End-to-End (E2E) Tests** - User flow testing across multiple features
+- **API Testing** - Backend API validation and integration testing
 - **Page Object Model (POM)** - Maintainable test structure with reusable components
 - **Visual Regression Testing** - Screenshot comparison for UI consistency
 - **Cross-Browser Testing** - Chromium, Firefox, and WebKit support
@@ -29,6 +30,7 @@ This project automates testing of a banking web application (Zero Bank Security)
 | **Fund Transfers**        | `e2e-transfer-funds.spec.ts`      | Money transfer between accounts                         |
 | **Currency Exchange**     | `e2e.currency-exchange.spec.ts`   | Foreign currency conversion features                    |
 | **Transaction Filtering** | `e2e.filter-transactions.spec.ts` | Filter and sort transaction history                     |
+| **API Testing**           | `api/api.spec.ts`                 | Backend API endpoints and integration testing           |
 | **Visual Regression**     | `visual/visual.spec.ts`           | Screenshot comparison testing                           |
 
 ### Architecture
@@ -179,6 +181,8 @@ automated_testing_playwright/
 │   │   ├── e2e-transfer-funds.spec.ts
 │   │   ├── e2e.currency-exchange.spec.ts
 │   │   └── e2e.filter-transactions.spec.ts
+│   ├── api/                    # API testing
+│   │   └── api.spec.ts
 │   └── visual/                 # Visual regression tests
 │       ├── visual.spec.ts
 │       └── visual.spec.ts-snapshots/
@@ -319,11 +323,14 @@ rmdir /s test-results # Windows
 
 ## 🚀 Future Enhancements
 
-- [ ] Add API testing alongside E2E tests
+- [x] Add API testing alongside E2E tests
 - [ ] Implement custom reporters
 - [ ] Add performance testing
 - [ ] Integrate with CI/CD pipeline
 - [ ] Add accessibility testing
+- [ ] Expand visual regression coverage
+- [ ] Add load testing capabilities
+- [ ] Create test data fixtures
 - [ ] Expand visual regression coverage
 
 ---
